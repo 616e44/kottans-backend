@@ -4,6 +4,7 @@
 
 1. [Git Basics](#git-basics)
 2. [Unix Shell](#unix-shell)
+3. [Git for Team Collaboration](#git-for-team-collaboration)
 
 ---
 ### Git Basics
@@ -33,3 +34,12 @@
 - [x] [The curl guide to HTTP requests](https://flaviocopes.com/http-curl/)
 
 `<usefull>` [**zsh** instead bash](https://github.com/robbyrussell/oh-my-zsh)
+
+### Git for Team Collaboration
+
+![](task_git_collaboration/whatIsVersionControl.png)
+
+![](task_git_collaboration/gitHubAndCollaboration.png)
+
+`<Flight rules for Git>` : <https://github.com/k88hudson/git-flight-rules/blob/master/README.md>
+
