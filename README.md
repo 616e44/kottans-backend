@@ -5,6 +5,7 @@
 1. [Git Basics](#git-basics)
 2. [Unix Shell](#unix-shell)
 3. [Git for Team Collaboration](#git-for-team-collaboration)
+4. [NodeJS Basics 1](#nodeJS-basics-1)
 
 ---
 ### Git Basics
@@ -42,4 +43,22 @@
 ![](task_git_collaboration/gitHubAndCollaboration.png)
 
 `<Flight rules for Git>` : <https://github.com/k88hudson/git-flight-rules/blob/master/README.md>
+
+### NodeJS Basics 1
+
+[JavaScript Basics:](https://github.com/kottans/backend/blob/master/tasks/js_basics_1.md)
+
+> - [x] [Intro to JS (udacity.com)](task_js_nodejs_basic/intro_to_js.png)
+
+> - [x] basic-javascript(learn.freecodecamp.org)
+
+> - [x] ES6(learn.freecodecamp.org)
+
+[NodeSchool:](https://nodeschool.io/)
+
+![](task_js_nodejs_basic/learnyounode_workshop.png)
+
+![](task_js_nodejs_basic/functional_javascript_workshop.png)
+
+![](task_js_nodejs_basic/stream_adventure_workshop.png)
 
