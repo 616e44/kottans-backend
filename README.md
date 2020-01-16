@@ -7,6 +7,7 @@
 3. [Git for Team Collaboration](#git-for-team-collaboration)
 4. [NodeJS Basics 1](#nodeJS-basics-1)
 5. [Memory Management](#memory-management)
+6. [TCP. UDP. Network](#tcp.-udp.-network)
 
 ---
 ### Git Basics
@@ -219,3 +220,13 @@ ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsysca
 </details>
 
 Heap - 55bcfdda4000-55bcfdf7b000 , Stack - 7ffde01c1000-7ffde0225000, MMS - 7f7ad2aa6000-7f7ad2aa9000
+
+### TCP. UDP. Network
+
+![](task_networks/internet101.png)
+
+![](task_networks/Networking_for_Web_Developers.png)
+
+- [x] [How DNS Works](https://howdns.works/)
+
+- [ ] [Port Sniffer Task](https://github.com/616e44/nodejs-2019-homeworks/blob/port-sniffer/submissions/anD/port-sniffer/sniffer.js)
