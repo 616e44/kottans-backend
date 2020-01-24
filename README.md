@@ -8,6 +8,7 @@
 4. [NodeJS Basics 1](#nodeJS-basics-1)
 5. [Memory Management](#memory-management)
 6. [TCP. UDP. Network](#tcp.-udp.-network)
+7. [HTTP & HTTPs](#http-&-https)
 
 ---
 ### Git Basics
@@ -230,3 +231,70 @@ Heap - 55bcfdda4000-55bcfdf7b000 , Stack - 7ffde01c1000-7ffde0225000, MMS - 7f7a
 - [x] [How DNS Works](https://howdns.works/)
 
 - [ ] [Port Sniffer Task](https://github.com/616e44/nodejs-2019-homeworks/blob/port-sniffer/submissions/anD/port-sniffer/sniffer.js)
+
+### HTTP & HTTPs
+
+    curl https://api.github.com/users/616e44
+    
+    curl -i https://api.github.com/users/616e44         // -i flag to include headers
+   
+    curl --user 616e44 https://api.github.com/gists/starred
+    
+    curl --user 616e44:*** https://api.github.com/gists/starred
+    
+    curl https://api.github.com/users/kottans/repos | grep -w full_name
+    
+    ------------------------------------------          // add new issue 
+
+    curl -i -H 'Authorization: token ***' \
+       -d '{ \
+            "title": "add new issue using github API", \
+            "body": "Create new issue in your repository", \
+            "labels": ["good first issue"] \
+          }' \
+       https://api.github.com/repos/616e44/kottans-backend/issues
+       
+    ------------------------------------------
+    curl -i --user 616e44 -X POST -d '{"title": "Add new issue using github API","body": "Create new issue in your repository","labels": ["good first issue"]}' https://api.github.com/repos/616e44/kottans-backend/issues
+
+[GitHub API documentation](https://developer.github.com/v3/guides/getting-started)
+
+[An introduction to curl using GitHub's API](https://gist.github.com/joyrexus/85bf6b02979d8a7b0308)
+
+
+### [Questions](https://github.com/kottans/backend/blob/master/tasks/http.md#questions)
+### `№1:`   
+- privacy  - someone can eavesdrop on the message.
+
+- integrity -  the message can be modified on the way to its destination.
+ 
+- identification - the owner of the message cannot be identified
+ 
+### `№2:`
+
+- In public key cryptography, each party has two keys, a public key and a private key. 
+  Information encrypted with a person's public key can only be decrypted with the private key and vice versa.
+  Each user publicly tells the world what his public key is but keeps his private key for himself.
+    
+### `№3:`
+
+       1. curl -X POST -H "Content-Type application/json" -d '{"pet_name":"name",""age":2, "medical_history":"description" ....}' http://host.domain:port/pets   
+        // [....,{"pet_name":"name",""age":2, "medical_history":"description" ...}]
+       
+       2. curl http://host.domain:port/pets/petsName
+       // [{"pet_name": "someName", "age": 2, "owner": "owner's name" ....}]
+       
+       3. curl -X PUT -H "Content-Type application/json" -d '{"pet_name" = newName}' http://host.domain:port/pets/pet_name
+       // [{"pet_name": "NewName", "age": 2, "owner": "owner's name" ....}]
+       
+       4. curl -X PUT -H "Content-Type application/json" -d '{"medical_history":"new description"}' http://host.domain:port/pets/pet_name
+       // [{"pet_name":"name",""age":2, "medical_history":"old description + new description",...}]
+       
+       5. curl -X PUT -H "Content-Type application/json" -d '{"doctor":"name"}' http://host.domain:port/pets/pet_name
+       // [{"pet_name":"name",""age":2, "medical_history":"old description + new description", "doctor": "name", ...}]
+                 
+       6. if pet exist  
+                  curl -X PUT -H "Content-Type application/json" -d '{"doctor":"name", "date": Data}' http://host.domain:port/pets/pet_name
+           else 
+                  1.  
+       
