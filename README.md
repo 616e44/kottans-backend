@@ -7,8 +7,8 @@
 3. [Git for Team Collaboration](#git-for-team-collaboration)
 4. [NodeJS Basics 1](#nodeJS-basics-1)
 5. [Memory Management](#memory-management)
-6. [TCP. UDP. Network](#tcp.-udp.-network)
-7. [HTTP & HTTPs](#http-&-https)
+6. [TCP. UDP. Network](#tcp-udp-network)
+7. [HTTP & HTTPs](#http--https)
 
 ---
 ### Git Basics
