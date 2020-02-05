@@ -9,6 +9,7 @@
 5. [Memory Management](#memory-management)
 6. [TCP. UDP. Network](#tcp-udp-network)
 7. [HTTP & HTTPs](#http--https)
+8. [Patterns](#patterns)
 
 ---
 ### Git Basics
@@ -297,4 +298,12 @@ Heap - 55bcfdda4000-55bcfdf7b000 , Stack - 7ffde01c1000-7ffde0225000, MMS - 7f7a
                   curl -X PUT -H "Content-Type application/json" -d '{"doctor":"name", "date": Data}' http://host.domain:port/pets/pet_name
            else 
                   1.  
-       
+### Patterns
+
+- [10 Common Software Architectural Patterns in a nutshell](https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013)
+
+- [design-patterns-for-humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+
+- [Software Architecture Guide](https://www.martinfowler.com/architecture/)
+
+![](task_patterns/udacity_software_architecture_and_design.png)
